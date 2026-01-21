@@ -3,10 +3,11 @@ import React from "react";
 const Government = () => {
   const officials = [
     {
-      name: "H. Fulan",
-      role: "Kepala Desa",
-      img: "https://ui-avatars.com/api/?name=Kepala+Desa&background=0D8ABC&color=fff",
-    },
+        name: "H. MOHAMMAD BAHARUDDIN",
+        role: "KEPALA DESA",
+        // Langsung tulis jalurnya sebagai teks, tanpa import
+        img: "/perangkat_desa/kepala-desa.jpg",
+      },
     {
       name: "Ahmad",
       role: "Sekretaris Desa",
@@ -44,7 +45,7 @@ const Government = () => {
                   className="foto-perangkat"
                 />
                 <div className="info">
-                  <h6 className="fw-bold">{official.name}</h6>
+                  <h5 className="fw-bold">{official.name}</h5>
                   <p className="text-muted small">{official.role}</p>
                 </div>
               </div>

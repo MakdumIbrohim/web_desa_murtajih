@@ -1,6 +1,3 @@
-// 1. Letakkan IMPORT di baris paling atas
-import fotoKades from "/perangkat_desa/kepala-desa.jpg";
-
 // 2. Deklarasikan siteData setelah import
 export const siteData = {
   meta: {
@@ -46,7 +43,8 @@ export const siteData = {
       {
         name: "H. MOHAMMAD BAHARUDDIN",
         role: "KEPALA DESA",
-        img: fotoKades, // Memanggil variabel yang di-import di atas
+        // Langsung tulis jalurnya sebagai teks, tanpa import
+        img: "/perangkat_desa/kepala-desa.jpg",
       },
       {
         name: "Ahmad",
