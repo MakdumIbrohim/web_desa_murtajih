@@ -1,0 +1,359 @@
+/* =========================
+    RESET & BASE
+========================= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.antigravity-ui {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* =========================
+    PRELOADER
+========================= */
+#preloader {
+    position: fixed;
+    inset: 0;
+    background-color: #020617;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-content h1 {
+    color: #ffffff;
+    letter-spacing: 6px;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-weight: 400;
+}
+
+.loader-bar {
+    width: 200px;
+    height: 4px;
+    background-color: #334155;
+    margin: 20px auto 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.loader-bar::after {
+    content: "";
+    width: 40%;
+    height: 100%;
+    background-color: #38bdf8;
+    display: block;
+    animation: loading 1.2s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(250%); }
+}
+
+/* =========================
+    NAVBAR (Top Bar + Main Nav)
+========================= */
+
+/* 1. Top Bar (Bagian Biru Atas) */
+.top-bar {
+    background-color: #003399; /* Biru Tua */
+    font-size: 0.85rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.warning-text {
+    color: #ffcc00; /* Kuning Emas */
+    letter-spacing: 0.5px;
+}
+
+/* 2. Teks Berjalan (Marquee) */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-container span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee-gerak 15s linear infinite;
+}
+
+@keyframes marquee-gerak {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.marquee-container span:hover {
+    animation-play-state: paused;
+    cursor: default;
+}
+
+/* 3. Social Icons */
+.social-icons a {
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* 4. Main Navbar (Bagian Putih Bawah) */
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #0046ff !important;
+}
+
+/* Styling Link Menu */
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #003399; /* Biru saat hover/aktif */
+}
+
+/* Styling Container Judul */
+.judul-desa {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Warna Emas untuk kata "DESA" */
+.judul-desa .text-gold {
+    color: #FFD700;
+    margin-right: 5px; /* Jarak dengan kata berikutnya */
+}
+
+/* Warna Putih untuk kata "MURTAJIH" */
+.judul-desa .text-white {
+    color: #ffffff;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* =========================
+    HERO / SLIDER
+========================= */
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.75));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 800;
+}
+
+.hero p {
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+/* Style Kursor Ketik */
+.cursor {
+    display: inline-block;
+    font-weight: bold;
+    color: #0d6efd;
+    animation: kedip 0.7s infinite;
+    margin-left: 2px;
+}
+
+@keyframes kedip {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* =========================
+    GALERI / ANIMASI
+========================= */
+.hover-zoom {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+    CARD (UMUM)
+========================= */
+.card-custom {
+    border: none;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+    HALAMAN PERANGKAT (BARU)
+========================= */
+
+/* 1. Foto Kepala Desa (Bagian Atas) */
+.kepala-desa-wrapper {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Kotak Biru Tua (Frame) */
+.kepala-desa-frame {
+    background-color: #0d6efd; /* Biru sesuai gambar */
+    padding: 15px 15px 0 15px; /* Padding atas kanan kiri, bawah 0 */
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Garis Kuning Aksen di belakang */
+.kepala-desa-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    border-top: 4px solid #ffcc00;
+    border-left: 4px solid #ffcc00;
+    z-index: 1;
+}
+.kepala-desa-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 60px;
+    height: 60px;
+    border-bottom: 4px solid #ffcc00;
+    border-right: 4px solid #ffcc00;
+    z-index: 1;
+}
+
+/* 2. Kartu Perangkat Desa (Grid Bawah) */
+.card-perangkat {
+    background: #fff;
+    border-radius: 8px; /* Sudut sedikit melengkung */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-perangkat:hover {
+    transform: translateY(-5px);
+}
+
+.foto-perangkat {
+    width: 100%;
+    aspect-ratio: 3/4; /* Agar foto proporsional seperti pas foto */
+    object-fit: cover;
+    object-position: top;
+}
+
+.card-perangkat .info {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+/* Garis bawah judul section */
+.section-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    margin: 10px auto;
+}
+
+/* =========================
+    LOGIN ADMIN
+========================= */
+.login-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #020617, #020617cc);
+    display: flex;
+    align-items: center;
+}
+
+.login-card {
+    border-radius: 18px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+    FOOTER
+========================= */
+footer {
+    background-color: #0046ff;
+    color: #cbd5f5;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
