@@ -1,11 +1,9 @@
-import React from "react";
-
 const Government = () => {
   const officials = [
     {
-        name: "H. MOHAMMAD BAHARUDDIN",
-        role: "KEPALA DESA",
-        img: "/perangkat_desa/kepala-desa.jpg",
+      name: "H. MOHAMMAD BAHARUDDIN",
+      role: "KEPALA DESA",
+      img: "/perangkat_desa/kepala-desa.jpg",
     },
     {
       name: "SUDAHNAN SAFRAJI, ST",
@@ -38,9 +36,9 @@ const Government = () => {
       img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
     },
     {
-        name: "NURUL KAMARIYAH, S.Pd",
-        role: "STAF KASI KESEJATERAAN RAKYAT",
-        img: "/perangkat_desa/staf-kasi-kesejahteraan.jpg",
+      name: "NURUL KAMARIYAH, S.Pd",
+      role: "STAF KASI KESEJATERAAN RAKYAT",
+      img: "/perangkat_desa/staf-kasi-kesejahteraan.jpg",
     },
     {
       name: "M. MUDHAR, S.Pd",
@@ -53,44 +51,44 @@ const Government = () => {
       img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
     },
     {
-        name: "KHOSNOL HATIMAH",
-        role: "KADUS MURTAJIH",
-        img: "/perangkat_desa/kadus-murtajih.jpg",
+      name: "KHOSNOL HATIMAH",
+      role: "KADUS MURTAJIH",
+      img: "/perangkat_desa/kadus-murtajih.jpg",
     },
     {
-        name: "RONI CAHYONO, S.Pd",
-        role: "KADUS SOLOH DAJAH",
-        img: "/perangkat_desa/kadus-soloh-dajah.jpg",
+      name: "RONI CAHYONO, S.Pd",
+      role: "KADUS SOLOH DAJAH",
+      img: "/perangkat_desa/kadus-soloh-dajah.jpg",
     },
     {
-        name: "NURUL ALIMUDDIN, S.Pd",
-        role: "KADUS SOLOH TIMUR",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      name: "NURUL ALIMUDDIN, S.Pd",
+      role: "KADUS SOLOH TIMUR",
+      img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
     },
     {
-        name: "MOHAMMAD NOER FAISAL",
-        role: "KADUS NANGGIRIK",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      name: "MOHAMMAD NOER FAISAL",
+      role: "KADUS NANGGIRIK",
+      img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
     },
     {
-        name: "ABD. HALIM",
-        role: "KADUS SOLOH LAOK",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      name: "ABD. HALIM",
+      role: "KADUS SOLOH LAOK",
+      img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
     },
     {
-        name: "ELLY FITRIASIH",
-        role: "KADUS OBERAN",
-        img: "/perangkat_desa/kadus-oberan.jpg",
+      name: "ELLY FITRIASIH",
+      role: "KADUS OBERAN",
+      img: "/perangkat_desa/kadus-oberan.jpg",
     },
     {
-        name: " SRI SUHARTATIK",
-        role: "KADUS TELAGA SARI",
-        img: "/perangkat_desa/kadus-telaga-sari.jpg",
+      name: " SRI SUHARTATIK",
+      role: "KADUS TELAGA SARI",
+      img: "/perangkat_desa/kadus-telaga-sari.jpg",
     },
     {
-        name: "MUHLIS ADI PUTRA",
-        role: "KADUS PAO GADING",
-        img: "/perangkat_desa/kadus-pao-gading.jpg",
+      name: "MUHLIS ADI PUTRA",
+      role: "KADUS PAO GADING",
+      img: "/perangkat_desa/kadus-pao-gading.jpg",
     },
   ];
 
@@ -119,7 +117,10 @@ const Government = () => {
                   />
                 </div>
                 <div className="info p-3">
-                  <h6 className="fw-bold mb-1 text-uppercase" style={{ fontSize: '0.85rem' }}>
+                  <h6
+                    className="fw-bold mb-1 text-uppercase"
+                    style={{ fontSize: "0.85rem" }}
+                  >
                     {official.name}
                   </h6>
                   <p className="text-primary small mb-0 fw-semibold">
