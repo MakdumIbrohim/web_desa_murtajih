@@ -192,7 +192,7 @@ export const siteData = {
     address: "Jl. Raya Murtajih, Desa Murtajih, Kec. Pademawu, Kab. Pamekasan",
     phone: "+62 812-3456-7890",
     email: "info@desamurtajih.go.id",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15830.43673752528!2d113.488668!3d-7.142079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd77dd0d64f0277%3A0xc31248039c905380!2sBalai%20Desa%20Murtajih!5e0!3m2!1sen!2sid!4v1705912345678!5m2!1sen!2sid"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6494434303295!2d113.50587867403944!3d-7.166461670316632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd77dbdf18f8727%3A0x80bdb184246562cd!2sBalai%20Desa%20Murtajih.!5e0!3m2!1sid!2sid!4v1768721835953!5m2!1sid!2sid"
   },
   footer: {
     text: "© 2026 Desa Murtajih. All rights reserved.",
