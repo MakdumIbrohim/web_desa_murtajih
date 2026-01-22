@@ -105,8 +105,29 @@ const Government = () => {
         </div>
 
         {/* Officials Grid */}
+        {/* Kepala Desa Section */}
+        <div className="row justify-content-center mb-5">
+          <div className="col-12 text-center">
+            <div className="kepala-desa-wrapper">
+              <div className="kepala-desa-frame card-perangkat p-0 border-0 shadow">
+                <img
+                  src={officials[0].img}
+                  alt={officials[0].name}
+                  className="foto-perangkat"
+                  style={{ maxWidth: "300px" }}
+                />
+                <div className="info p-3 bg-white">
+                  <h5 className="fw-bold mb-1">{officials[0].name}</h5>
+                  <p className="text-primary fw-bold mb-0">{officials[0].role}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Other Officials Grid */}
         <div className="row justify-content-center">
-          {officials.map((official, index) => (
+          {officials.slice(1).map((official, index) => (
             <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <div className="card-perangkat text-center shadow-sm h-100 border-0">
                 <div className="img-container">
@@ -114,6 +135,7 @@ const Government = () => {
                     src={official.img}
                     alt={official.name}
                     className="foto-perangkat"
+                    loading="lazy"
                   />
                 </div>
                 <div className="info p-3">
