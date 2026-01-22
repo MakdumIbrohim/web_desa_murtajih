@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import * as bootstrap from "bootstrap";
 import { siteData } from "../data/content";
 
@@ -7,20 +7,20 @@ const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const { brand, links } = siteData.navbar;
 
+  const menuRef = useRef(null);
+  const bsCollapse = useRef(null);
+
   useEffect(() => {
     // 1. Theme Logic
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
 
-    // 2. Mobile Menu Logic
-    document.querySelectorAll(".nav-link").forEach((link) => {
-      link.addEventListener("click", () => {
-        const menu = document.getElementById("menu");
-        if (menu && menu.classList.contains("show")) {
-          bootstrap.Collapse.getOrCreateInstance(menu).hide();
-        }
+    // 2. Initialize Bootstrap Collapse
+    if (menuRef.current) {
+      bsCollapse.current = new bootstrap.Collapse(menuRef.current, {
+        toggle: false,
       });
-    });
+    }
 
     // 3. Scroll Spy Logic
     const handleScroll = () => {
@@ -43,11 +43,29 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (bsCollapse.current) {
+        bsCollapse.current.dispose();
+      }
+    };
   }, [links, theme]);
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
+  const handleMenuToggle = () => {
+    if (bsCollapse.current) {
+      bsCollapse.current.toggle();
+    }
+  };
+
+  const handleLinkClick = (href) => {
+    setActiveLink(href);
+    if (bsCollapse.current) {
+      bsCollapse.current.hide();
+    }
   };
 
   return (
@@ -68,21 +86,21 @@ const Navbar = () => {
           <button
             className="navbar-toggler text-white border-0"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
+            onClick={handleMenuToggle}
+            aria-label="Toggle navigation"
           >
             <i className="bi bi-list fs-2"></i>
           </button>
         </div>
 
-        <div className="collapse navbar-collapse" id="menu">
+        <div className="collapse navbar-collapse" id="menu" ref={menuRef}>
           <ul className="navbar-nav ms-auto align-items-center">
             {links.map((link, index) => (
               <li key={index} className="nav-item">
                 <a
                   className={`nav-link ${activeLink === link.href ? "active" : ""}`}
                   href={link.href}
-                  onClick={() => setActiveLink(link.href)}
+                  onClick={() => handleLinkClick(link.href)}
                 >
                   {link.label}
                 </a>
