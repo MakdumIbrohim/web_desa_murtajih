@@ -67,14 +67,7 @@ const Navbar = () => {
                 Kontak
               </a>
             </li>
-            <li className="nav-item ms-lg-3">
-              <a
-                className="btn btn-warning btn-sm fw-bold rounded-pill px-3"
-                href="#login"
-              >
-                <i className="bi bi-person-lock"></i> Login
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>
