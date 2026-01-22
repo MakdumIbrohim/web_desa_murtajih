@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import * as bootstrap from "bootstrap";
 
 const Navbar = () => {
   useEffect(() => {
