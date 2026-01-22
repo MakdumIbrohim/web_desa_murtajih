@@ -1,4 +1,5 @@
 import React from "react";
+import { siteData } from "../data/content";
 
 const Contact = () => {
   return (
@@ -59,6 +60,22 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
+
+              {/* Map Section */}
+              <div className="row mt-4">
+                <div className="col-12">
+                  <div className="ratio ratio-21x9 rounded overflow-hidden shadow-sm">
+                    <iframe
+                      src={siteData.contact.mapUrl}
+                      title="Peta Lokasi Desa Murtajih"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

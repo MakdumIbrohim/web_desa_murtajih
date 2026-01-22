@@ -1,14 +1,9 @@
 import React from "react";
 
+import { siteData } from "../data/content";
+
 const Gallery = () => {
-  const galleryData = [
-    { id: 1, year: "2025", img: 15 },
-    { id: 2, year: "2025", img: 16 },
-    { id: 3, year: "2025", img: 17 },
-    { id: 4, year: "2026", img: 18 },
-    { id: 5, year: "2026", img: 19 },
-    { id: 6, year: "2026", img: 20 },
-  ];
+  const galleryData = siteData.gallery.images;
 
   return (
     <section id="galeri" className="py-5 bg-light">

@@ -3,26 +3,31 @@ export const siteData = {
   meta: {
     title: "Desa Murtajih - Smart Village",
     description:
-      "Website Resmi Desa Murtajih, Kecamatan Pademawu, Kabupaten Pamekasan.",
+      "Website Resmi Desa Murtajih, Kecamatan Pademawu, Kabupaten Pamekasan. Menuju Desa Mandiri, Sejahtera, dan Berbudaya.",
+    keywords: "Desa Murtajih, Pamekasan, Pademawu, Desa Pintar, Smart Village, Website Desa",
+    author: "Pemerintah Desa Murtajih"
   },
   navbar: {
     brand: "Desa Murtajih",
     links: [
-      { label: "Beranda", href: "#hero" },
-      { label: "Tentang Kami", href: "#about" },
-      { label: "Pemerintahan", href: "#government" },
+      { label: "Beranda", href: "#beranda" },
+      { label: "Profil", href: "#profil" },
+      { label: "Pemerintahan", href: "#perangkat" },
       { label: "Layanan", href: "#services" },
-      { label: "Transparansi", href: "#transparency" },
-      { label: "Potensi", href: "#explore" },
-      { label: "Kontak", href: "#contact" },
+      { label: "Galeri", href: "#galeri" },
+      { label: "Berita", href: "#berita" },
+      { label: "Kontak", href: "#kontak" },
     ],
   },
   hero: {
     title: "Selamat Datang di<br>Desa Murtajih",
     subtitle: "Menuju Desa Mandiri, Sejahtera, dan Berbudaya.",
     cta: "Jelajahi Desa",
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2664&auto=format&fit=crop",
+    slides: [
+      "/images/slider/foto1.jpg",
+      "/images/slider/foto2.jpg",
+      "/images/slider/foto3.jpg"
+    ]
   },
   about: {
     title: "Tentang Kami",
@@ -43,23 +48,92 @@ export const siteData = {
       {
         name: "H. MOHAMMAD BAHARUDDIN",
         role: "KEPALA DESA",
-        // Langsung tulis jalurnya sebagai teks, tanpa import
         img: "/perangkat_desa/kepala-desa.jpg",
       },
       {
-        name: "Ahmad",
-        role: "Sekretaris Desa",
+        name: "SUDAHNAN SAFRAJI, ST",
+        role: "SEKERTARIS DESA",
         img: "https://ui-avatars.com/api/?name=Sekretaris&background=0D8ABC&color=fff",
       },
       {
-        name: "Siti",
-        role: "Kaur Keuangan",
+        name: "TSUROYYA ALIYAH",
+        role: "KAUR TATA USAHA/UMUM",
         img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
       },
       {
-        name: "Budi",
-        role: "Kaur Umum",
-        img: "https://ui-avatars.com/api/?name=Kaur+Umum&background=0D8ABC&color=fff",
+        name: "FITRIATUS SHOLIHAH, S.Pd",
+        role: "KAUR KEUANGAN",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "FAHRUR ROSIANTO",
+        role: "KAUR PERENCANAAN",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "SYARIFATUL LAILI, S.Pd",
+        role: "KASI PEMERINTAHAN",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "CHAIRIL FAJAR, SE",
+        role: "KASI KESEJAHTERAAN RAKYAT",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "NURUL KAMARIYAH, S.Pd",
+        role: "STAF KASI KESEJATERAAN RAKYAT",
+        img: "/perangkat_desa/staf-kasi-kesejahteraan.jpg",
+      },
+      {
+        name: "M. MUDHAR, S.Pd",
+        role: "KASI PELAYANAN",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "IKHWAN MAULANA, S.Pd",
+        role: "STAF KASI PELAYANAN",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "KHOSNOL HATIMAH",
+        role: "KADUS MURTAJIH",
+        img: "/perangkat_desa/kadus-murtajih.jpg",
+      },
+      {
+        name: "RONI CAHYONO, S.Pd",
+        role: "KADUS SOLOH DAJAH",
+        img: "/perangkat_desa/kadus-soloh-dajah.jpg",
+      },
+      {
+        name: "NURUL ALIMUDDIN, S.Pd",
+        role: "KADUS SOLOH TIMUR",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "MOHAMMAD NOER FAISAL",
+        role: "KADUS NANGGIRIK",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "ABD. HALIM",
+        role: "KADUS SOLOH LAOK",
+        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+      },
+      {
+        name: "ELLY FITRIASIH",
+        role: "KADUS OBERAN",
+        img: "/perangkat_desa/kadus-oberan.jpg",
+      },
+      {
+        name: " SRI SUHARTATIK",
+        role: "KADUS TELAGA SARI",
+        img: "/perangkat_desa/kadus-telaga-sari.jpg",
+      },
+      {
+        name: "MUHLIS ADI PUTRA",
+        role: "KADUS PAO GADING",
+        img: "/perangkat_desa/kadus-pao-gading.jpg",
       },
     ],
   },
@@ -84,37 +158,16 @@ export const siteData = {
       },
     ],
   },
-  explore: {
-    title: "Potensi Desa",
-    subtitle: "Explore Our Village",
-    items: [
-      {
-        title: "Pertanian",
-        desc: "Lahan subur untuk pertanian padi dan palawija.",
-        img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2664&auto=format&fit=crop",
-      },
-      {
-        title: "Wisata Alam",
-        desc: "Keindahan alam yang masih asri dan alami.",
-        img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2670&auto=format&fit=crop",
-      },
-      {
-        title: "Budaya Lokal",
-        desc: "Tradisi dan budaya yang kaya dan beragam.",
-        img: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2670&auto=format&fit=crop",
-      },
-    ],
-  },
   gallery: {
     title: "Galeri Desa",
     subtitle: "Gallery",
     images: [
-      { id: 1, year: "2025", img: 15 },
-      { id: 2, year: "2025", img: 16 },
-      { id: 3, year: "2025", img: 17 },
-      { id: 4, year: "2026", img: 18 },
-      { id: 5, year: "2026", img: 19 },
-      { id: 6, year: "2026", img: 20 },
+      { id: 1, year: "2025", img: 1011 },
+      { id: 2, year: "2025", img: 1012 },
+      { id: 3, year: "2025", img: 1013 },
+      { id: 4, year: "2026", img: 1014 },
+      { id: 5, year: "2026", img: 1015 },
+      { id: 6, year: "2026", img: 1016 },
     ],
   },
   news: {
@@ -139,6 +192,7 @@ export const siteData = {
     address: "Jl. Raya Murtajih, Desa Murtajih, Kec. Pademawu, Kab. Pamekasan",
     phone: "+62 812-3456-7890",
     email: "info@desamurtajih.go.id",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15830.43673752528!2d113.488668!3d-7.142079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd77dd0d64f0277%3A0xc31248039c905380!2sBalai%20Desa%20Murtajih!5e0!3m2!1sen!2sid!4v1705912345678!5m2!1sen!2sid"
   },
   footer: {
     text: "© 2026 Desa Murtajih. All rights reserved.",
