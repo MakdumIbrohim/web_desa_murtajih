@@ -2,38 +2,24 @@ import React from "react";
 import { siteData } from "../data/content";
 
 const About = () => {
-  const { about, hero } = siteData;
+  const { about } = siteData;
 
   return (
     <section id="profil" className="py-5 bg-light">
       <div className="container">
-        <div className="row align-items-center">
-          {/* Left Column: Image */}
-          <div className="col-lg-5 mb-4 mb-lg-0">
-            <div className="position-relative">
-              <div className="ratio ratio-4x3 overflow-hidden rounded-4 shadow-lg">
-                <img
-                  src={hero.slides[0]} // Using the first slider image as feature image for now
-                  alt="Desa Murtajih"
-                  className="object-fit-cover w-100 h-100"
-                />
-              </div>
-              <div className="position-absolute bottom-0 end-0 bg-warning p-3 rounded-start-4 text-white shadow">
-                <h5 className="mb-0 fw-bold">Sejak 1800-an</h5>
-              </div>
+        <div className="row">
+          <div className="col-lg-10 mx-auto">
+            <div className="text-center mb-5">
+              <h2 className="display-5 fw-bold mb-3">{about.title}</h2>
+              <div className="section-underline mx-auto mb-4"></div>
+              <p className="lead text-muted">{about.subtitle}</p>
             </div>
-          </div>
 
-          {/* Right Column: Content */}
-          <div className="col-lg-7 ps-lg-5">
-            <h2 className="display-5 fw-bold mb-3">{about.title}</h2>
-            <div className="section-underline ms-0 mb-4"></div>
-            <p className="lead text-muted mb-4">{about.subtitle}</p>
-            <p className="mb-5 text-secondary" style={{ lineHeight: "1.8" }}>
+            <p className="mb-5 text-secondary text-center" style={{ lineHeight: "1.8" }}>
               {about.history}
             </p>
 
-            <div className="row g-4">
+            <div className="row g-4 justify-content-center">
               <div className="col-md-6">
                 <div className="card h-100 border-0 shadow-sm bg-white p-4 rounded-4">
                   <div className="d-flex align-items-center mb-3">
