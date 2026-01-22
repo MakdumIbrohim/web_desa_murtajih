@@ -4,7 +4,7 @@ const Government = () => {
   const { officials } = siteData.government;
 
   return (
-    <section id="perangkat" className="py-5 bg-light">
+    <section id="perangkat" className="py-5 bg-alt">
       <div className="container">
         {/* Header Section */}
         <div className="row">
@@ -27,7 +27,7 @@ const Government = () => {
                   className="foto-perangkat"
                   style={{ maxWidth: "300px" }}
                 />
-                <div className="info p-3 bg-white">
+                <div className="info p-3 bg-card">
                   <h5 className="fw-bold mb-1">{officials[0].name}</h5>
                   <p className="text-primary fw-bold mb-0">{officials[0].role}</p>
                 </div>

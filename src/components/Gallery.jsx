@@ -6,7 +6,7 @@ const Gallery = () => {
   const galleryData = siteData.gallery.images;
 
   return (
-    <section id="galeri" className="py-5 bg-light">
+    <section id="galeri" className="py-5 bg-alt">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center mb-5">

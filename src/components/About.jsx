@@ -5,7 +5,7 @@ const About = () => {
   const { about } = siteData;
 
   return (
-    <section id="profil" className="py-5 bg-light">
+    <section id="profil" className="py-5 bg-alt">
       <div className="container">
         <div className="row">
           <div className="col-lg-10 mx-auto">
@@ -21,7 +21,7 @@ const About = () => {
 
             <div className="row g-4 justify-content-center">
               <div className="col-md-6">
-                <div className="card h-100 border-0 shadow-sm bg-white p-4 rounded-4">
+                <div className="card h-100 border-0 shadow-sm bg-card p-4 rounded-4">
                   <div className="d-flex align-items-center mb-3">
                     <i className="bi bi-eye fs-2 text-primary me-2"></i>
                     <h5 className="fw-bold mb-0">Visi</h5>

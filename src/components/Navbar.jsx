@@ -4,10 +4,15 @@ import { siteData } from "../data/content";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("#beranda");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const { brand, links } = siteData.navbar;
 
   useEffect(() => {
-    // 1. Mobile Menu Logic
+    // 1. Theme Logic
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+
+    // 2. Mobile Menu Logic
     document.querySelectorAll(".nav-link").forEach((link) => {
       link.addEventListener("click", () => {
         const menu = document.getElementById("menu");
@@ -17,7 +22,7 @@ const Navbar = () => {
       });
     });
 
-    // 2. Scroll Spy Logic
+    // 3. Scroll Spy Logic
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100; // Offset for fixed navbar
 
@@ -39,7 +44,11 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [links]);
+  }, [links, theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
 
   return (
     <nav
@@ -54,14 +63,17 @@ const Navbar = () => {
           </span>
         </a>
 
-        <button
-          className="navbar-toggler text-white border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-        >
-          <i className="bi bi-list fs-2"></i>
-        </button>
+        <div className="d-flex align-items-center gap-3">
+          {/* Mobile Toggle Button */}
+          <button
+            className="navbar-toggler text-white border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <i className="bi bi-list fs-2"></i>
+          </button>
+        </div>
 
         <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav ms-auto align-items-center">
@@ -76,6 +88,22 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+
+            {/* Theme Toggle Button */}
+            <li className="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <button
+                onClick={toggleTheme}
+                className="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+                style={{ width: "40px", height: "40px", borderColor: "rgba(255,255,255,0.2)" }}
+                aria-label="Toggle Theme"
+              >
+                {theme === "light" ? (
+                  <i className="bi bi-moon-stars-fill text-warning"></i>
+                ) : (
+                  <i className="bi bi-sun-fill text-warning"></i>
+                )}
+              </button>
+            </li>
           </ul>
         </div>
       </div>

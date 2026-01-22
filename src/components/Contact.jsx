@@ -3,7 +3,7 @@ import { siteData } from "../data/content";
 
 const Contact = () => {
   return (
-    <section id="kontak" className="py-5 bg-light">
+    <section id="kontak" className="py-5 bg-alt">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center mb-5">
