@@ -54,12 +54,12 @@ export const siteData = {
       {
         name: "SUDAHNAN SAFRAJI, ST",
         role: "SEKERTARIS DESA",
-        img: "https://ui-avatars.com/api/?name=Sekretaris&background=0D8ABC&color=fff",
+        img: "/perangkat_desa/sekertaris-desa.jpg",
       },
       {
         name: "TSUROYYA ALIYAH",
         role: "KAUR TATA USAHA/UMUM",
-        img: "/perangkat_desa/sekertaris-desa.jpg",
+        img: "/perangkat_desa/kaur-tata-usaha.jpg",
       },
       {
         name: "FITRIATUS SHOLIHAH, S.Pd",
