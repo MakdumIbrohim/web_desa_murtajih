@@ -4,8 +4,9 @@ export const siteData = {
     title: "Desa Murtajih - Smart Village",
     description:
       "Website Resmi Desa Murtajih, Kecamatan Pademawu, Kabupaten Pamekasan. Menuju Desa Mandiri, Sejahtera, dan Berbudaya.",
-    keywords: "Desa Murtajih, Pamekasan, Pademawu, Desa Pintar, Smart Village, Website Desa",
-    author: "Pemerintah Desa Murtajih"
+    keywords:
+      "Desa Murtajih, Pamekasan, Pademawu, Desa Pintar, Smart Village, Website Desa",
+    author: "Pemerintah Desa Murtajih",
   },
   navbar: {
     brand: "Desa Murtajih",
@@ -25,8 +26,8 @@ export const siteData = {
     slides: [
       "/images/slider/foto1.jpg",
       "/images/slider/foto2.jpg",
-      "/images/slider/foto3.jpg"
-    ]
+      "/images/slider/foto3.jpg",
+    ],
   },
   about: {
     title: "Tentang Kami",
@@ -72,7 +73,7 @@ export const siteData = {
       {
         name: "SYARIFATUL LAILI, S.Pd",
         role: "KASI PEMERINTAHAN",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+        img: "/perangkat_desa/kasi-pemerintahan.jpg",
       },
       {
         name: "CHAIRIL FAJAR, SE",
@@ -92,7 +93,7 @@ export const siteData = {
       {
         name: "IKHWAN MAULANA, S.Pd",
         role: "STAF KASI PELAYANAN",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+        img: "/perangkat_desa/staf-kasi-pelayanan.jpg",
       },
       {
         name: "KHOSNOL HATIMAH",
@@ -107,12 +108,12 @@ export const siteData = {
       {
         name: "NURUL ALIMUDDIN, S.Pd",
         role: "KADUS SOLOH TIMUR",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+        img: "/perangkat_desa/kadus-soloh-timur.jpg",
       },
       {
         name: "MOHAMMAD NOER FAISAL",
         role: "KADUS NANGGIRIK",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+        img: "/perangkat_desa/kadus-nangirik.jpg",
       },
       {
         name: "ABD. HALIM",
@@ -161,12 +162,48 @@ export const siteData = {
     title: "Galeri Desa",
     subtitle: "Gallery",
     images: [
-      { id: 1, year: "2025", month: "Agustus", title: "Musyawarah Desa", img: 1011 },
-      { id: 2, year: "2025", month: "Agustus", title: "Penyaluran BLT", img: 1012 },
-      { id: 3, year: "2025", month: "Juli", title: "Kerja Bakti Masal", img: 1013 },
-      { id: 4, year: "2026", month: "Januari", title: "Kunjungan Camat", img: 1014 },
-      { id: 5, year: "2026", month: "Februari", title: "Pelatihan UMKM", img: 1015 },
-      { id: 6, year: "2026", month: "Maret", title: "Panen Raya Padi", img: 1016 },
+      {
+        id: 1,
+        year: "2025",
+        month: "Agustus",
+        title: "Musyawarah Desa",
+        img: 1011,
+      },
+      {
+        id: 2,
+        year: "2025",
+        month: "Agustus",
+        title: "Penyaluran BLT",
+        img: 1012,
+      },
+      {
+        id: 3,
+        year: "2025",
+        month: "Juli",
+        title: "Kerja Bakti Masal",
+        img: 1013,
+      },
+      {
+        id: 4,
+        year: "2026",
+        month: "Januari",
+        title: "Kunjungan Camat",
+        img: 1014,
+      },
+      {
+        id: 5,
+        year: "2026",
+        month: "Februari",
+        title: "Pelatihan UMKM",
+        img: 1015,
+      },
+      {
+        id: 6,
+        year: "2026",
+        month: "Maret",
+        title: "Panen Raya Padi",
+        img: 1016,
+      },
     ],
   },
   news: {
@@ -191,7 +228,8 @@ export const siteData = {
     address: "Jl. Raya Murtajih, Desa Murtajih, Kec. Pademawu, Kab. Pamekasan",
     phone: "+62 821-3538-6707",
     email: "murtajih.desa2017@gmail.com",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6494434303295!2d113.50587867403944!3d-7.166461670316632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd77dbdf18f8727%3A0x80bdb184246562cd!2sBalai%20Desa%20Murtajih.!5e0!3m2!1sid!2sid!4v1768721835953!5m2!1sid!2sid"
+    mapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6494434303295!2d113.50587867403944!3d-7.166461670316632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd77dbdf18f8727%3A0x80bdb184246562cd!2sBalai%20Desa%20Murtajih.!5e0!3m2!1sid!2sid!4v1768721835953!5m2!1sid!2sid",
   },
   footer: {
     text: "© 2026 Desa Murtajih. All rights reserved.",
