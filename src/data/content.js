@@ -33,12 +33,13 @@ export const siteData = {
     title: "Tentang Kami",
     subtitle: "The Profile",
     history:
-      "Desa Murtajih adalah salah satu desa di Kecamatan Pademawu, Kabupaten Pamekasan. Desa kami memiliki sejarah panjang dalam menjaga tradisi sekaligus beradaptasi dengan kemajuan teknologi.",
-    visi: "Terwujudnya Desa Murtajih yang Mandiri, Aman, dan Sejahtera.",
+      "Berdasarkan data kependudukan terbaru dari DKB Semester 1 Tahun 2025 Dinas Kependudukan dan Pencatatan Sipil (Dukcapil) Kabupaten Pamekasan, Desa Murtajih yang terletak di Kecamatan Pademawu memiliki jumlah penduduk sebanyak 6.295 jiwa dengan komposisi gender yang terdiri dari 3.016 laki-laki dan 3.279 perempuan yang tersebar dalam 1.887 Kepala Keluarga. Secara administratif, wilayah desa ini mencakup 8 dusun, 8 RW, dan 17 RT, dengan profil sosial-ekonomi yang menunjukkan adanya 3.478 jiwa dalam kategori angkatan kerja tetap. Saat ini, Desa Murtajih terus memperkuat sistem informasi desa melalui digitalisasi data untuk meningkatkan akurasi layanan administrasi serta validasi bantuan sosial bagi masyarakat.",
+    visi: "Terwujudnya Desa Murtajih yang mandiri, sejahtera, dan religius melalui peningkatan tata kelola pemerintahan yang transparan dan partisipatif, serta penguatan potensi lokal.",
     misi: [
-      "Meningkatkan kualitas pelayanan publik.",
-      "Mengembangkan potensi ekonomi lokal.",
-      "Menjaga kelestarian lingkungan dan budaya.",
+      "Meningkatkan kualitas pelayanan publik dan tata kelola pemerintahan desa yang akuntabel serta transparan.",
+      "Membangun infrastruktur desa yang merata dan berkelanjutan untuk menunjang aktivitas perekonomian.",
+      "Peningkatan ekonomi masyarakat melalui pemberdayaan UMKM dan potensi pertanian/potensi lokal.",
+      "Mengembangkan potensi ekonomi lokal dan Badan Usaha Milik Desa (BUMDes).",
     ],
   },
   government: {
@@ -58,7 +59,7 @@ export const siteData = {
       {
         name: "TSUROYYA ALIYAH",
         role: "KAUR TATA USAHA/UMUM",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+        img: "/perangkat_desa/sekertaris-desa.jpg",
       },
       {
         name: "FITRIATUS SHOLIHAH, S.Pd",
@@ -78,7 +79,7 @@ export const siteData = {
       {
         name: "CHAIRIL FAJAR, SE",
         role: "KASI KESEJAHTERAAN RAKYAT",
-        img: "/perangkat_desa/kasi-kesejahteraan.jpg",
+        img: "/perangkat_desa/kasi-kesejahteraan-rakyat.jpg",
       },
       {
         name: "NURUL KAMARIYAH, S.Pd",
@@ -118,7 +119,7 @@ export const siteData = {
       {
         name: "ABD. HALIM",
         role: "KADUS SOLOH LAOK",
-        img: "https://ui-avatars.com/api/?name=Kaur+Keuangan&background=0D8ABC&color=fff",
+        img: "/perangkat_desa/kadus-soloh-laok.jpg",
       },
       {
         name: "ELLY FITRIASIH",
