@@ -76,7 +76,11 @@ const Gallery = () => {
                 <div className="card-custom hover-zoom h-100">
                   <div style={{ overflow: "hidden", borderRadius: "16px 16px 0 0" }}>
                     <img
-                      src={`https://picsum.photos/400/300?random=${item.img}`}
+                      src={
+                        typeof item.img === "string"
+                          ? item.img
+                          : `https://picsum.photos/400/300?random=${item.img}`
+                      }
                       alt={item.title}
                       className="card-img-top"
                       style={{ transition: "transform 0.5s ease", height: "250px", objectFit: "cover" }}

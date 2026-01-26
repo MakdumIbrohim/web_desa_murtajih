@@ -167,6 +167,13 @@ export const siteData = {
       { id: 4, year: "2026", month: "Januari", title: "Kunjungan Camat", img: 1014 },
       { id: 5, year: "2026", month: "Februari", title: "Pelatihan UMKM", img: 1015 },
       { id: 6, year: "2026", month: "Maret", title: "Panen Raya Padi", img: 1016 },
+      {
+        id: 7,
+        year: "2025",
+        month: "Januari",
+        title: "Pembinaan Limas 2025 triwulan 1",
+        img: "/kegiatan/pembinaan-limas-2025-triwulan-1.jpeg",
+      },
     ],
   },
   news: {
