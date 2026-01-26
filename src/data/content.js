@@ -145,7 +145,7 @@ export const siteData = {
       {
         icon: "bi-file-earmark-text",
         title: "Administrasi Kependudukan",
-        desc: "Pengurusan KTP, KK, dan Surat Pindah.",
+        desc: "Pengurusan AKte Kelahiran, KK, dan Surat Pindah.",
       },
       {
         icon: "bi-envelope-paper",
