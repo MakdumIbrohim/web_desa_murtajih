@@ -176,6 +176,7 @@ export const siteData = {
         month: "Januari",
         title: "Pembinaan Limas 2025 triwulan 1",
         img: "/kegiatan/pembinaan-limas-2025-triwulan-1.jpeg",
+      },
       {
         id: 1,
         year: "2025",
