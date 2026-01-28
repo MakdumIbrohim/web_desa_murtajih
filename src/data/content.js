@@ -1,7 +1,7 @@
 // 2. Deklarasikan siteData setelah import
 export const siteData = {
   meta: {
-    title: "Desa Murtajih - Smart Village",
+    title: "Desa Murtajih",
     description:
       "Website Resmi Desa Murtajih, Kecamatan Pademawu, Kabupaten Pamekasan. Menuju Desa Mandiri, Sejahtera, dan Berbudaya.",
     keywords:
