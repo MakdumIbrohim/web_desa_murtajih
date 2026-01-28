@@ -199,6 +199,21 @@ export const siteData = {
           "/kegiatan/Penyaluran-blt-tahap-empat-lima-enam/WhatsApp Image 2026-01-23 at 15.34.23.jpeg",
         ],
       },
+      {
+        id: 10,
+        year: "2025",
+        month: "Juli",
+        title: "Musyawarah Dusun Bulan Tujuh 2025",
+        img: [
+          "/kegiatan/musyawarah-dusun-bulan-tujuh-2025/musyawarah_dusun_naggirik.jpeg",
+          "/kegiatan/musyawarah-dusun-bulan-tujuh-2025/musyawarah_dusun_oberan.jpeg",
+          "/kegiatan/musyawarah-dusun-bulan-tujuh-2025/musyawarah_dusun_pao_gading.jpeg",
+          "/kegiatan/musyawarah-dusun-bulan-tujuh-2025/musyawarah_dusun_solo_dajah.jpeg",
+          "/kegiatan/musyawarah-dusun-bulan-tujuh-2025/musyawarah_dusun_solo_timur.jpeg",
+          "/kegiatan/musyawarah-dusun-bulan-tujuh-2025/musyawarah_dusun_soloh_laok.jpeg",
+          "/kegiatan/musyawarah-dusun-bulan-tujuh-2025/musyawarah_dusun_telaga_sari.jpeg",
+        ],
+      },
     ],
   },
   news: {
