@@ -163,13 +163,6 @@ export const siteData = {
     title: "Galeri Desa",
     subtitle: "Gallery",
     images: [
-
-      { id: 1, year: "2025", month: "Agustus", title: "Musyawarah Desa", img: 1011 },
-      { id: 2, year: "2025", month: "Agustus", title: "Penyaluran BLT", img: 1012 },
-      { id: 3, year: "2025", month: "Juli", title: "Kerja Bakti Masal", img: 1013 },
-      { id: 4, year: "2026", month: "Januari", title: "Kunjungan Camat", img: 1014 },
-      { id: 5, year: "2026", month: "Februari", title: "Pelatihan UMKM", img: 1015 },
-      { id: 6, year: "2026", month: "Maret", title: "Panen Raya Padi", img: 1016 },
       {
         id: 7,
         year: "2025",
@@ -178,52 +171,10 @@ export const siteData = {
         img: "/kegiatan/pembinaan-limas-2025-triwulan-1.jpeg",
       },
       {
-        id: 1,
-        year: "2025",
-        month: "Agustus",
-        title: "Musyawarah Desa",
-        img: 1011,
-      },
-      {
-        id: 2,
-        year: "2025",
-        month: "Agustus",
-        title: "Penyaluran BLT",
-        img: 1012,
-      },
-      {
-        id: 3,
-        year: "2025",
-        month: "Juli",
-        title: "Kerja Bakti Masal",
-        img: 1013,
-      },
-      {
-        id: 4,
-        year: "2026",
-        month: "Januari",
-        title: "Kunjungan Camat",
-        img: 1014,
-      },
-      {
-        id: 5,
-        year: "2026",
-        month: "Februari",
-        title: "Pelatihan UMKM",
-        img: 1015,
-      },
-      {
-        id: 6,
-        year: "2026",
-        month: "Maret",
-        title: "Panen Raya Padi",
-        img: 1016,
-      },
-      {
         id: 8,
         year: "2025",
         month: "Juni",
-        title: "Penyaluran BLT Tahap IV, V, VI",
+        title: "Penyaluran Bantuan Langsung Tunai Dana Desa Tahap IV, V, VI",
         img: [
           "/kegiatan/Penyaluran-blt-tahap-empat-lima-enam/WhatsApp Image 2026-01-23 at 15.34.16.jpeg",
           "/kegiatan/Penyaluran-blt-tahap-empat-lima-enam/WhatsApp Image 2026-01-23 at 15.34.18.jpeg",
