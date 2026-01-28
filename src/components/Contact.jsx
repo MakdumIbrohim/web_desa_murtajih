@@ -30,6 +30,43 @@ const Contact = () => {
                     <i className="bi bi-envelope-fill text-warning me-2"></i>
                     {siteData.contact.email}
                   </p>
+                  <div className="mt-3">
+                    <h6 className="fw-bold mb-2">Ikuti Kami</h6>
+                    <div className="d-flex gap-3">
+                      <a
+                        href={siteData.contact.social.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-warning"
+                      >
+                        <i className="bi bi-instagram fs-4"></i>
+                      </a>
+                      <a
+                        href={siteData.contact.social.tiktok}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-warning"
+                      >
+                        <i className="bi bi-tiktok fs-4"></i>
+                      </a>
+                      <a
+                        href={siteData.contact.social.youtube}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-warning"
+                      >
+                        <i className="bi bi-youtube fs-4"></i>
+                      </a>
+                      <a
+                        href={siteData.contact.social.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-warning"
+                      >
+                        <i className="bi bi-facebook fs-4"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-md-6">
                   <form>
@@ -75,7 +112,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
