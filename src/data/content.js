@@ -20,7 +20,7 @@ export const siteData = {
     ],
   },
   hero: {
-    title: "Selamat Datang di<br>Desa Murtajih",
+    title: "Selamat Datang di web<br>Desa Murtajih",
     subtitle: "Menuju Desa Mandiri, Sejahtera, dan Berbudaya.",
     cta: "Jelajahi Desa",
     slides: [
