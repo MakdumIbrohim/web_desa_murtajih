@@ -181,6 +181,23 @@ export const siteData = {
         img: "/kegiatan/pembinaan-limas-2025-triwulan-1.jpeg",
       },
       {
+        id: 18,
+        year: "2025",
+        month: "Januari",
+        title: "Rapat Bumdes Januari 2025",
+        img: "/kegiatan/rapat-bumdes-januari-2025.jpeg",
+      },
+      {
+        id: 12,
+        year: "2025",
+        month: "April",
+        title: "Lomba Memasak PKK April 2025",
+        img: [
+          "/kegiatan/lomba-memasak-pkk-april-2025/photo_1.png",
+          "/kegiatan/lomba-memasak-pkk-april-2025/photo_2.png",
+        ],
+      },
+      {
         id: 9,
         year: "2025",
         month: "Mei",
@@ -222,21 +239,11 @@ export const siteData = {
         ],
       },
       {
-        id: 11,
-        year: "2026",
-        month: "Januari",
-        title: "Penyaluran Bantuan Bencana Alam Dari BPBD",
-        img: "/kegiatan/penyaluran-bantuan-bencana-alam-dari-bpbd.jpeg",
-      },
-      {
-        id: 12,
+        id: 17,
         year: "2025",
-        month: "April",
-        title: "Lomba Memasak PKK April 2025",
-        img: [
-          "/kegiatan/lomba-memasak-pkk-april-2025/photo_1.png",
-          "/kegiatan/lomba-memasak-pkk-april-2025/photo_2.png",
-        ],
+        month: "Juli",
+        title: "Pembinaan RT/RW Juli 2025",
+        img: "/kegiatan/pembinaan-rt/rw-juli-2025/photo_1.png",
       },
       {
         id: 13,
@@ -274,18 +281,11 @@ export const siteData = {
         img: "/kegiatan/musyawarah-keluarga-pemerintah-desa-murtajih-november-2025/photo_1.png",
       },
       {
-        id: 17,
-        year: "2025",
-        month: "Juli",
-        title: "Pembinaan RT/RW Juli 2025",
-        img: "/kegiatan/pembinaan-rt/rw-juli-2025/photo_1.png",
-      },
-      {
-        id: 18,
-        year: "2025",
+        id: 11,
+        year: "2026",
         month: "Januari",
-        title: "Rapat Bumdes Januari 2025",
-        img: "/kegiatan/rapat-bumdes-januari-2025.jpeg",
+        title: "Penyaluran Bantuan Bencana Alam Dari BPBD",
+        img: "/kegiatan/penyaluran-bantuan-bencana-alam-dari-bpbd.jpeg",
       },
       {
         id: 19,
