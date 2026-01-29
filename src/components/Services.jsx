@@ -9,8 +9,7 @@ const Services = () => {
     },
     {
       icon: "bi-envelope-paper",
-      title: "Surat Pengantar",
-      desc: "Surat pengantar SKCK, Surat Keterangan Tidak Mampu (SKTM), Surat Keterangan Usaha, dan Surat Keterangan Umum.",
+        
     },
     {
       icon: "bi-chat-dots",
