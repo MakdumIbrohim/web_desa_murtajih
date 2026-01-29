@@ -62,9 +62,19 @@ export const siteData = {
         img: "/perangkat_desa/sekertaris-desa.jpg",
       },
       {
-        name: "TSUROYYA ALIYAH",
-        role: "KAUR TATA USAHA/UMUM",
-        img: "/perangkat_desa/kaur-tata-usaha.jpg",
+        name: "SYARIFATUL LAILI, S.Pd",
+        role: "KASI PEMERINTAHAN",
+        img: "/perangkat_desa/kasi-pemerintahan.jpg",
+      },
+      {
+        name: "CHAIRIL FAJAR, SE",
+        role: "KASI KESEJAHTERAAN RAKYAT",
+        img: "/perangkat_desa/kasi-kesejahteraan-rakyat.jpg",
+      },
+      {
+        name: "M. MUDHAR, S.Pd",
+        role: "KASI PELAYANAN",
+        img: "/perangkat_desa/kasi-pelayanan.jpg",
       },
       {
         name: "FITRIATUS SHOLIHAH, S.Pd",
@@ -77,29 +87,9 @@ export const siteData = {
         img: "/perangkat_desa/kaur-perencanaan.jpg",
       },
       {
-        name: "SYARIFATUL LAILI, S.Pd",
-        role: "KASI PEMERINTAHAN",
-        img: "/perangkat_desa/kasi-pemerintahan.jpg",
-      },
-      {
-        name: "CHAIRIL FAJAR, SE",
-        role: "KASI KESEJAHTERAAN RAKYAT",
-        img: "/perangkat_desa/kasi-kesejahteraan-rakyat.jpg",
-      },
-      {
-        name: "NURUL KAMARIYAH, S.Pd",
-        role: "STAF KASI KESEJATERAAN RAKYAT",
-        img: "/perangkat_desa/staf-kasi-kesejahteraan.jpg",
-      },
-      {
-        name: "M. MUDHAR, S.Pd",
-        role: "KASI PELAYANAN",
-        img: "/perangkat_desa/kasi-pelayanan.jpg",
-      },
-      {
-        name: "IKHWAN MAULANA, S.Pd",
-        role: "STAF KASI PELAYANAN",
-        img: "/perangkat_desa/staf-kasi-pelayanan.jpg",
+        name: "TSUROYYA ALIYAH",
+        role: "KAUR TATA USAHA/UMUM",
+        img: "/perangkat_desa/kaur-tata-usaha.jpg",
       },
       {
         name: "KHOSNOL HATIMAH",
@@ -140,6 +130,16 @@ export const siteData = {
         name: "MUHLIS ADI PUTRA",
         role: "KADUS PAO GADING",
         img: "/perangkat_desa/kadus-pao-gading.jpg",
+      },
+      {
+        name: "NURUL KAMARIYAH, S.Pd",
+        role: "STAF KASI KESEJATERAAN RAKYAT",
+        img: "/perangkat_desa/staf-kasi-kesejahteraan.jpg",
+      },
+      {
+        name: "IKHWAN MAULANA, S.Pd",
+        role: "STAF KASI PELAYANAN",
+        img: "/perangkat_desa/staf-kasi-pelayanan.jpg",
       },
     ],
   },
