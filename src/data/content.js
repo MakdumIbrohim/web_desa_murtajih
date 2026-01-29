@@ -141,6 +141,11 @@ export const siteData = {
         role: "STAF KASI PELAYANAN",
         img: "/perangkat_desa/staf-kasi-pelayanan.jpg",
       },
+      {
+        name: "SHOYFUR RIJAL, SE",
+        role: "STAF OPERATOR DESA",
+        img: "/perangkat_desa/staf_operatos_desa.jpeg",
+      },
     ],
   },
   services: {
