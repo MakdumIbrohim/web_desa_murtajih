@@ -10,6 +10,7 @@ const Gallery = () => {
   const [modalTitle, setModalTitle] = useState("");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
+  const [searchQuery, setSearchQuery] = useState("");
 
   // Get unique years and months for filter options
   const years = useMemo(() => {
@@ -46,13 +47,14 @@ const Gallery = () => {
   const filteredImages = galleryData.filter((item) => {
     const yearMatch = selectedYear === "Semua" || item.year === selectedYear;
     const monthMatch = selectedMonth === "Semua" || item.month === selectedMonth;
-    return yearMatch && monthMatch;
+    const searchMatch = item.title.toLowerCase().includes(searchQuery.toLowerCase());
+    return yearMatch && monthMatch && searchMatch;
   });
 
   // Reset visibleCount when filters change
   React.useEffect(() => {
     setVisibleCount(3);
-  }, [selectedYear, selectedMonth]);
+  }, [selectedYear, selectedMonth, searchQuery]);
 
   const handleLoadMore = () => {
     setVisibleCount((prev) => prev + 6);
@@ -77,10 +79,23 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Filter Section */}
         <div className="row justify-content-center mb-5">
           <div className="col-md-8">
-            <div className="d-flex flex-wrap justify-content-center gap-3">
+            <div className="d-flex flex-wrap justify-content-center gap-3 align-items-center">
+              <div className="input-group w-auto shadow-sm">
+                <span className="input-group-text bg-white border-end-0">
+                  <i className="bi bi-search text-muted"></i>
+                </span>
+                <input
+                  type="text"
+                  className="form-control border-start-0 ps-0"
+                  placeholder="Cari foto..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  style={{ maxWidth: "200px" }}
+                />
+              </div>
+
               <select
                 className="form-select w-auto shadow-sm"
                 value={selectedYear}
